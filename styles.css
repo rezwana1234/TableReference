@@ -1,0 +1,120 @@
+/* default styles */
+@font-face {
+    font-family: New Font;
+    src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+}
+
+@font-face {
+    font-family: "Font 2";
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
+}
+
+body{
+    background-color: #C5FAD5;
+}
+
+h1{
+    font-family: "New Font", helvetica, serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 700px;
+    color: #AA96DA;
+    text-transform: capitalize;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 40px;
+    margin-left: 180px;
+    background-color: #FFFFD2;
+    box-sizing: border-box;
+}
+
+.container, .container2 {
+    margin-top: 25px;
+    border: 2px solid #AA96DA;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 550px;
+    position: relative;
+    left: 250px;
+}
+
+.container2 {
+    width: 660px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 200px;
+}
+
+th {
+    font-family: "Font 2", Helvetica, sans-serif;
+    color:#AA96DA;
+    text-align: center;
+    padding: 10px 30px;
+    line-height: 1.4;
+    border: 2px solid #FFFFD2;
+    background-color: #FFFFD2;
+}
+
+
+.left, .left2 {
+    color: black;
+    border: 2px solid #AA96DA;
+    text-align: center;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.right, .right2 {
+    color: black;
+    border: 2px solid #AA96DA;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* media queries for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  
+  .container, .container2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  
+  th {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .container, .container2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+  
+  th {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
